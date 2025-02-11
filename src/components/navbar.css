@@ -1,0 +1,86 @@
+/* Navbar.css */
+.navbar {
+  position: fixed; /* Fija el navbar en la parte superior */
+  top: 0; /* Alinea el navbar al borde superior */
+  left: 0;
+  width: 100%; /* Ocupa todo el ancho de la pantalla */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #ffffff; /* Línea inferior blanca */
+  background-color: #ffffff; /* Fondo blanco para que sea visible */
+  z-index: 1000; /* Asegura que el navbar esté por encima de otros elementos */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera para destacar el navbar */
+  box-sizing: border-box; /* Asegura que el padding se considere en el tamaño total */
+  overflow: hidden; /* Evita que el contenido se salga del navbar */
+}
+
+.navbar ul {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas si es necesario */
+  gap: 1rem; /* Ajusta el espacio entre los elementos */
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar a {
+  font-size: 1rem; /* Reduce el tamaño de fuente en pantallas pequeñas */
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+.navbar a:hover {
+  color: #32CD32; /* Verde lima */
+}
+
+.navbar .active {
+  color: #32CD32;
+  font-weight: 700;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  font-family: 'Georgia', serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #32CD32; /* Texto blanco */
+  text-decoration: none;
+}
+
+.navbar .logo img {
+  width: 60px; /* Ajusta el tamaño de la imagen para pantallas pequeñas */
+  margin-right: 0.5rem;
+}
+
+.navbar .logo span {
+  color: black;
+}
+
+/* Ajuste para el contenido principal */
+body {
+  margin: 0;
+  padding-top: 80px; /* Asegura que el contenido no quede detrás del navbar */
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Cambia la dirección del contenido a vertical */
+    padding: 1rem;
+  }
+
+  .navbar ul {
+    justify-content: center;
+  }
+
+  .navbar .logo {
+    justify-content: center;
+    font-size: 1.2rem; /* Reduce el tamaño de la fuente del logo */
+  }
+}
