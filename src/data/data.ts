@@ -11,7 +11,7 @@ export interface Question {
 export const sublimationQuestions: Question[] = [
   {
     question:
-      "El primer paso para iniciar con la sublimación es imprimir en papel el diseño a estampar Antes de iniciar con cualquier proceso industrial, es necesario hacer uso de las medidas de seguridad preventivas para la realización de cada labor, En el caso del proceso de sublimación el cual es un proceso en el que por medio de una prensa se transfiere un diseño en la tela para la posterior confección. Se debe hacer uso de elementos de protección personal. 1) ¿Cuál o cuáles serían los recomendados para esta operación?:",
+      "El primer paso para iniciar con la sublimación es imprimir en papel el diseño a estampar Antes de iniciar con cualquier proceso industrial, es necesario hacer uso de las medidas de seguridad preventivas para la realización de cada labor, En el caso del proceso de sublimación el cual es un proceso en el que por medio de una prensa se transfiere un diseño en la tela para la posterior confección. Se debe hacer uso de elementos de protección personal.) ¿Cuál o cuáles serían los recomendados para esta operación?:",
     options: [
       "Colocarse guantes impermeables.",
       "Colocarse guantes de tela.",
@@ -25,6 +25,57 @@ export const sublimationQuestions: Question[] = [
       "✅ Correcto! El uso de guantes térmicos es fundamental en el proceso de sublimación, ya que permite proteger las manos del operario ante las altas temperaturas de la prensa. Aplicar las medidas de seguridad adecuadas ayuda a prevenir accidentes laborales. ¡Gran trabajo!",
     feedbackIncorrect:
       "❌ Incorrecto. Los guantes impermeables, de tela o quirúrgicos no ofrecen la protección necesaria contra el calor generado en la sublimación. Para esta tarea, lo más seguro es usar guantes térmicos, ya que ayudan a prevenir quemaduras. Recuerda siempre elegir el EPP adecuado para cada proceso. ¡Sigue aprendiendo!",
+  },
+  {
+    question:
+      " Ahora, con la prensa apagada aun, ¿Cuál es el siguiente paso para continuar con el proceso?",
+    options: [
+      "Se coloca papel sublimado en la prensa.",
+      "Se gradúa el nivel de presión necesario (con la manija de presión)",
+      "Se gradúa la temperatura.",
+      "Colocar cinta térmica a la tela",
+    ],
+    correctAnswer: "Se gradúa el nivel de presión necesario (con la manija de presión)",
+    correctImage: "/correcto.gif",
+    incorrectImage: "/error.jpg",
+    feedbackCorrect:
+      "✅ Correcto! Graduar la presión es el siguiente paso adecuado en el proceso de sublimación. Ajustar correctamente este parámetro es clave para lograr una transferencia óptima del diseño a la tela. Prestar atención a cada detalle del proceso garantiza un mejor resultado. ¡Bien hecho!",
+    feedbackIncorrect:
+      "❌ Incorrecto. Antes de continuar con el proceso de sublimación, es fundamental ajustar la presión de la prensa, ya que este factor influye en la calidad del estampado. Otras acciones, como colocar el papel sublimado o ajustar la temperatura, deben hacerse en etapas posteriores. ¡Sigue aprendiendo y poniendo atención a los pasos correctos!",
+  },
+  {
+    question:
+      "Ahora enciende y se abre la prensa, se coloca el producto textil con la parte que se desea sublimar mirando hacia arriba, se expande bien la tela para que no cuente con ninguna arruga, ya que esto puede afectar el proceso. la pantalla muestra dos datos, el de arriba es la temperatura y el de abajo es el tiempo, se gradúan los valores (Temperatura a 200°C y tiempo en 60s). ¿Cuál es el siguiente paso a seguir?",
+    options: [
+      "Se pone el papel sublimado sobre la tela y se fija con cinta de enmascarar.",
+      "Se pone el papel sublimado sobre la tela y se fija con cauchos.",
+      "Se pone el papel sublimado sobre la tela y se fija con cinta térmica.",
+      "Se pone el papel sublimado sobre la tela y se fija con cinta aislante.",
+    ],
+    correctAnswer: "Se pone el papel sublimado sobre la tela y se fija con cinta térmica.",
+    correctImage: "/correcto.gif",
+    incorrectImage: "/error.jpg",
+    feedbackCorrect:
+      "✅ Correcto! Fijar el papel sublimado con cinta térmica es la mejor opción, ya que esta cinta está diseñada para soportar altas temperaturas sin afectar el material ni la maquinaria. Usar el material adecuado garantiza un proceso seguro y un resultado de calidad. ¡Excelente trabajo!",
+    feedbackIncorrect:
+      "❌ Incorrecto. Usar una cinta inadecuada puede generar problemas en el proceso, como daños en el material, en la maquinaria o incluso riesgos de incendio. La opción correcta es usar cinta térmica, ya que está diseñada específicamente para resistir el calor de la sublimación. ¡Recuerda siempre elegir los materiales adecuados para cada tarea!",
+  },
+  {
+    question:
+      "Cuando este bien fijado todo, se baja la prensa, el tiempo se empieza a descontar Y cuando el proceso termina suena una alarma que es la que nos informa que el proceso finalizó y podemos levantar la prensa  ¿Cuál es el procedimiento más adecuado a seguir una vez finalizado la sublimación?",
+    options: [
+      "Retirar la tela inmediatamente para que no se quede pegada en la prensa.",
+      "Esperar 10 segundos que es el tiempo en el que la prensa se enfría.",
+      "Se gradúa la temperatura nuevamente para que no se queme la prenda.",
+      "Se establece el tiempo en el contador para que no se exceda el tiempo requerido.",
+    ],
+    correctAnswer: "Esperar 10 segundos que es el tiempo en el que la prensa se enfría.",
+    correctImage: "/correcto.gif",
+    incorrectImage: "/error.jpg",
+    feedbackCorrect:
+      "✅ Correcto! Esperar unos segundos antes de retirar la tela es la mejor decisión, ya que permite que la temperatura de la prensa disminuya, reduciendo el riesgo de quemaduras. Aunque los guantes térmicos ofrecen protección, siempre es recomendable tomar precauciones adicionales. ¡Bien hecho, seguimos garantizando seguridad en cada paso!",
+    feedbackIncorrect:
+      "❌ Incorrecto. Retirar la tela inmediatamente o hacer ajustes innecesarios en la temperatura pueden generar riesgos como quemaduras o errores en el proceso. La mejor opción es esperar unos segundos para permitir que la prensa se enfríe, asegurando un manejo seguro del material sublimado. ¡Recuerda siempre priorizar la seguridad en cada tarea!",
   },
   //... resto de preguntas con mismos campos
 ];

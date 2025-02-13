@@ -1,86 +1,87 @@
-/* Cuestionario.css */
-.cuestionario-container {
+.email-container {
+  max-width: 500px;
+  margin: 2rem auto;
   padding: 2rem;
-  background-color: #fff;
-  color: #000;
-  font-family: 'Arial', sans-serif;
-  min-height: 100vh;
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.email-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 1rem 0;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.email-container button {
+  background: #4a90e2;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.existing-submission {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #fff3cd;
+  border-radius: 5px;
+  color: #856404;
+}
+
+.cuestionario-button {
+  background: #2ecc71;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: transform 0.3s;
+}
+
+.cuestionario-button:hover {
+  transform: translateY(-2px);
 }
 
 .cuestionario-title {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #008000; /* Green */
-  margin-bottom: 1.5rem;
   text-align: center;
-}
-
-.cuestionario-question {
-  margin-bottom: 2.5rem;
-  border: 1px solid #008000; /* Green */
-  border-radius: 8px;
-  padding: 1.5rem;
-  background-color: #f9f9f9;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.cuestionario-subtitle {
-  font-size: 1.75rem;
-  font-weight: bold;
-  color: #000;
-  margin-bottom: 1rem;
-}
-
-.cuestionario-label {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  color: #000;
-  margin-top: 0.75rem;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-.cuestionario-img {
-  width: 100%;
-  height: auto;
-  margin: 1rem 0;
-  border-radius: 8px;
-  border: 1px solid #000;
-}
-
-.cuestionario-input {
-  accent-color: #008000; /* Green */
-  transform: scale(1.2);
-}
-
-.cuestionario-options {
-  display: flex;
-  flex-direction: column;
-  margin-top: 1rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(45deg, #ff7e5f, #feb47b);
+  padding: 15px;
+  border-radius: 10px;
 }
 
 .cuestionario-button {
-  background-color: #008000; /* Green */
-  color: #fff;
-  padding: 0.75rem 1.5rem;
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 20px auto;
+  padding: 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(90deg, #007bff, #00c6ff);
   border: none;
   border-radius: 8px;
-  font-size: 1rem;
-  font-weight: bold;
   cursor: pointer;
-  margin-top: 2rem;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .cuestionario-button:hover {
-  background-color: #005500; /* Darker green */
-}
-
-.cuestionario-button:focus {
-  outline: 2px solid #005500;
-}
-
-.cuestionario-button:active {
-  background-color: #003300;
+  background: linear-gradient(90deg, #0056b3, #0099cc);
+  transform: scale(1.05);
+  box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.3);
 }
