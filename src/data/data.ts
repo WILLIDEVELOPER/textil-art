@@ -19,8 +19,8 @@ export const sublimationQuestions: Question[] = [
       "Colocarse los guantes térmicos.",
     ],
     correctAnswer: "Colocarse los guantes térmicos.",
-    correctImage: "/correcto.gif",
-    incorrectImage: "/error.jpg",
+    correctImage: "/assets/1.4.png",
+    incorrectImage: "/assets/1.17.png",
     feedbackCorrect:
       "✅ Correcto! El uso de guantes térmicos es fundamental en el proceso de sublimación, ya que permite proteger las manos del operario ante las altas temperaturas de la prensa. Aplicar las medidas de seguridad adecuadas ayuda a prevenir accidentes laborales. ¡Gran trabajo!",
     feedbackIncorrect:
@@ -35,9 +35,10 @@ export const sublimationQuestions: Question[] = [
       "Se gradúa la temperatura.",
       "Colocar cinta térmica a la tela",
     ],
-    correctAnswer: "Se gradúa el nivel de presión necesario (con la manija de presión)",
-    correctImage: "/correcto.gif",
-    incorrectImage: "/error.jpg",
+    correctAnswer:
+      "Se gradúa el nivel de presión necesario (con la manija de presión)",
+    correctImage: "/assets/1.5.png",
+    incorrectImage: "/assets/1.17.png",
     feedbackCorrect:
       "✅ Correcto! Graduar la presión es el siguiente paso adecuado en el proceso de sublimación. Ajustar correctamente este parámetro es clave para lograr una transferencia óptima del diseño a la tela. Prestar atención a cada detalle del proceso garantiza un mejor resultado. ¡Bien hecho!",
     feedbackIncorrect:
@@ -52,9 +53,10 @@ export const sublimationQuestions: Question[] = [
       "Se pone el papel sublimado sobre la tela y se fija con cinta térmica.",
       "Se pone el papel sublimado sobre la tela y se fija con cinta aislante.",
     ],
-    correctAnswer: "Se pone el papel sublimado sobre la tela y se fija con cinta térmica.",
-    correctImage: "/correcto.gif",
-    incorrectImage: "/error.jpg",
+    correctAnswer:
+      "Se pone el papel sublimado sobre la tela y se fija con cinta térmica.",
+    correctImage: "/assets/1.8.png",
+    incorrectImage: "/assets/1.17.png",
     feedbackCorrect:
       "✅ Correcto! Fijar el papel sublimado con cinta térmica es la mejor opción, ya que esta cinta está diseñada para soportar altas temperaturas sin afectar el material ni la maquinaria. Usar el material adecuado garantiza un proceso seguro y un resultado de calidad. ¡Excelente trabajo!",
     feedbackIncorrect:
@@ -69,9 +71,10 @@ export const sublimationQuestions: Question[] = [
       "Se gradúa la temperatura nuevamente para que no se queme la prenda.",
       "Se establece el tiempo en el contador para que no se exceda el tiempo requerido.",
     ],
-    correctAnswer: "Esperar 10 segundos que es el tiempo en el que la prensa se enfría.",
-    correctImage: "/correcto.gif",
-    incorrectImage: "/error.jpg",
+    correctAnswer:
+      "Esperar 10 segundos que es el tiempo en el que la prensa se enfría.",
+    correctImage: "/assets/1.13.png",
+    incorrectImage: "/assets/1.11.png",
     feedbackCorrect:
       "✅ Correcto! Esperar unos segundos antes de retirar la tela es la mejor decisión, ya que permite que la temperatura de la prensa disminuya, reduciendo el riesgo de quemaduras. Aunque los guantes térmicos ofrecen protección, siempre es recomendable tomar precauciones adicionales. ¡Bien hecho, seguimos garantizando seguridad en cada paso!",
     feedbackIncorrect:
@@ -87,8 +90,8 @@ export const cuttingQuestions: Question[] = [
       "¿Cuál es valor correcto de la iluminación localizada que se debe tener al usar la máquina de corte?",
     options: ["100 luxes", "120 luxes", "50 luxes", "150 luxes"],
     correctAnswer: "150 luxes",
-    correctImage: "/correcto.gif",
-    incorrectImage: "/error.jpg",
+    correctImage: "/assets/2.2.png",
+    incorrectImage: "/assets/2.1.png",
     feedbackCorrect:
       "✅ Correcto! Lo estás haciendo muy bien; De acuerdo con la resolución número 40150 del 03 de mayo de 2024, que forma parte del Reglamento Técnico de Iluminación y Alumbrado Público (RETILAP), se establece que la iluminación localizada requerida al operar la máquina de corte debe ser de 150 lux.",
     feedbackIncorrect:
@@ -104,8 +107,8 @@ export const cuttingQuestions: Question[] = [
       "Colocarse los guantes térmicos.",
     ],
     correctAnswer: "Guantes de protección mecánica.",
-    correctImage: "/correcto.gif",
-    incorrectImage: "/error.jpg",
+    correctImage: "/assets/2.5.png",
+    incorrectImage: "/assets/2.4.png",
     feedbackCorrect:
       "✅ Correcto! Muy buen trabajo; El uso de guantes de protección mecánica es esencial para garantizar la seguridad del operario y prevenir accidentes durante la operación de la máquina de corte. Debido a que estos guantes están diseñados para mantener la destreza y la sensibilidad necesarias, lo que permite un manejo seguro y eficiente del equipo.",
     feedbackIncorrect:
@@ -121,8 +124,8 @@ export const cuttingQuestions: Question[] = [
       "Realizar la labor continuamente.",
     ],
     correctAnswer: "Ajustar la altura adecuada de la máquina para el operario.",
-    correctImage: "/correcto.gif",
-    incorrectImage: "/error.jpg",
+    correctImage: "/assets/2.8.png",
+    incorrectImage: "/assets/2.7.png",
     feedbackCorrect:
       "✅ Correcto! Felicitaciones, sigue así; esto reduce significativamente el riesgo de lesiones relacionadas con posturas incorrectas al evitar posturas forzadas y movimientos repetitivos; se minimiza la probabilidad de sufrir lesiones asociadas al trabajo, garantizando así un entorno laboral más seguro y saludable.",
     feedbackIncorrect:
@@ -138,8 +141,8 @@ export const cuttingQuestions: Question[] = [
       "Las Normas ISO 4217",
     ],
     correctAnswer: "Las Normas ISO 11228",
-    correctImage: "/correcto.gif",
-    incorrectImage: "/error.jpg",
+    correctImage: "/assets/2.14.png",
+    incorrectImage: "/assets/2.4.png",
     feedbackCorrect:
       "✅ Correcto! Gran trabajo; La norma escogida se centra en proporcionar directrices sobre cómo manejar cargas manualmente de manera segura, con énfasis en la ergonomía para prevenir riesgos. La norma ISO 11228 aborda aspectos relacionados con la seguridad y ergonomía en el manejo manual de cargas, ayudando a prevenir lesiones y promover un trabajo seguro.",
     feedbackIncorrect:
@@ -160,8 +163,8 @@ export const pressingQuestions: Question[] = [
       "Todas las anteriores.",
     ],
     correctAnswer: "Guantes térmicos.",
-    correctImage: "/correcto.gif",
-    incorrectImage: "/error.jpg",
+    correctImage: "/assets/3.3.png",
+    incorrectImage: "/assets/3.5.png",
     feedbackCorrect:
       "✅ Correcto! Los guantes térmicos son esenciales en el proceso de prensado, ya que protegen las manos del operario contra posibles quemaduras debido a las altas temperaturas. Usar el EPP adecuado es clave para garantizar la seguridad en el trabajo. ¡Bien hecho!",
     feedbackIncorrect:
@@ -177,8 +180,8 @@ export const pressingQuestions: Question[] = [
       "Silicona liquida",
     ],
     correctAnswer: "Pegamento especial para telas",
-    correctImage: "/correcto.gif",
-    incorrectImage: "/error.jpg",
+    correctImage: "/assets/3.8.png",
+    incorrectImage: "/assets/3.7.png",
     feedbackCorrect:
       "✅ Correcto! El pegamento especial para telas es el más adecuado para este proceso, ya que permite una adhesión fuerte y de buena calidad, asegurando que las piezas acolchonadas se fijen correctamente a la tela. Usar los materiales correctos garantiza un mejor resultado en el trabajo. ¡Bien hecho!",
     feedbackIncorrect:
@@ -195,8 +198,8 @@ export const pressingQuestions: Question[] = [
     ],
     correctAnswer:
       "Empujar la bandeja teniendo cuidado de no tener los dedos dentro de la bandeja.",
-    correctImage: "/correcto.gif",
-    incorrectImage: "/error.jpg",
+    correctImage: "/assets/3.12.png",
+    incorrectImage: "/assets/3.14.png",
     feedbackCorrect:
       "✅ Correcto! Empujar la bandeja teniendo cuidado de no tener los dedos dentro es la mejor forma de evitar accidentes. La prensa funciona con calor y presión, por lo que es fundamental mantener las manos fuera del área de riesgo para prevenir atrapamientos o quemaduras. ¡Excelente trabajo!",
     feedbackIncorrect:
@@ -212,8 +215,8 @@ export const pressingQuestions: Question[] = [
       "de 27°C a 30°C.",
     ],
     correctAnswer: "de 14°C a 25°C.",
-    correctImage: "/correcto.gif",
-    incorrectImage: "/error.jpg",
+    correctImage: "/assets/3.16.png",
+    incorrectImage: "/assets/3.17.png",
     feedbackCorrect:
       "✅ Correcto! Según el reglamento sobre disposiciones mínimas de seguridad y salud en los lugares de trabajo, la temperatura adecuada debe estar entre 14°C y 25°C. Mantener un ambiente dentro de este rango es clave para garantizar la comodidad y el bienestar de los trabajadores. ¡Bien hecho!",
     feedbackIncorrect:
@@ -225,20 +228,67 @@ export const pressingQuestions: Question[] = [
 //sewingQuestions
 export const sewingQuestions: Question[] = [
   {
-    question: "¿Cuál o cuáles serían los recomendados para esta operación?",
-    options: [
-      "Colocarse guantes impermeables.",
-      "Colocarse guantes de tela.",
-      "Colocarse guantes quirúrgicos.",
-      "Colocarse los guantes térmicos.",
-    ],
-    correctAnswer: "Colocarse los guantes térmicos.",
-    correctImage: "/correcto.gif",
-    incorrectImage: "/error.jpg",
+    question:
+      "Cuál es correcto valor de la iluminación localizada que se debe tener al usar la máquina del proceso de confección",
+    options: ["100 luxes", "120 luxes", "50 luxes", "150 luxes"],
+    correctAnswer: "150 luxes",
+    correctImage: "/assets/4.7.png",
+    incorrectImage: "/assets/4.8.png",
     feedbackCorrect:
-      "✅ Correcto! Los guantes térmicos protegen contra el calor de la prensa",
+      "✅ Correcto! ¡Bien hecho! La iluminación localizada para operar la máquina de confección debe ser de 150 lux, según la resolución 40150 de 2024 del RETILAP.",
     feedbackIncorrect:
-      "❌ Incorrecto. Solo los guantes térmicos protegen adecuadamente contra altas temperaturas",
+      "❌ Incorrecto. Para operar la máquina de confección, se requieren 150 lux, según la resolución 40150 de 2024 del RETILAP.",
+  },
+  {
+    question:
+      " ¿de qué tipo debe ser la luz localizada para el proceso de confección?",
+    options: [
+      "Luz cálida de 2700K - 3000K",
+      "Luz neutra de 4000K - 4500K",
+      "Luz fría de 5000K - 6500K",
+      "Luz natural sin regulación",
+    ],
+    correctAnswer: "Luz fría de 5000K - 6500K",
+    correctImage: "/assets/4.9C.png",
+    incorrectImage: "/assets/4.9A.png",
+    feedbackCorrect:
+      "✅ Correcto! ¡Bien hecho! Para el proceso de confección, la iluminación más adecuada es la luz fría de 5000K - 6500K, ya que proporciona mayor claridad, reduce la fatiga visual y mejora la precisión en los detalles. Según las normativas de iluminación industrial, este tipo de luz es ideal para tareas que requieren alta concentración y exactitud.",
+    feedbackIncorrect:
+      "❌ Incorrecto. La luz más adecuada para el proceso de confección es la luz fría de 5000K - 6500K, ya que mejora la visibilidad y reduce el cansancio ocular. Otros tipos de luz, como la cálida o la neutra, pueden generar sombras o disminuir la percepción de los detalles, afectando la calidad del trabajo. ¡Sigue adelante y aprende de este error!",
+  },
+  {
+    question:
+      "¿cuáles son las recomendaciones para un puesto de trabajo que se desempeña sentado?",
+    options: [
+      "El asiento debe poder girarse sobre su propio eje, se debe contar con un asiento reclinable sin que se pueda calibrar la altura del mismo.",
+      "El asiento debe contar con reposamuñecas para que el operario puede reclinar sus brazos, la mesa debajo no debe contar con espacio para que el operario mantenga su postura de trabajo de forma rígida.",
+      "El asiento debe ser graduable en su altura y contar con espaldar, además se debe contar con espacio bajo la mesa para estirar los pies, a su vez el asiento debe contar con 5 ruedas para su estabilidad y que él operario adopte una postura adecuada.",
+      " El asiento no debe contar con espaldar para que el operario adopte una posición propicia para ejercer su labor también es recomendable poseer 3 ruedas para que se tenga una estabilidad propicia.",
+    ],
+    correctAnswer: "El asiento debe ser graduable en su altura y contar con espaldar, además se debe contar con espacio bajo la mesa para estirar los pies, a su vez el asiento debe contar con 5 ruedas para su estabilidad y que él operario adopte una postura adecuada.",
+    correctImage: "/assets/4.3.png",
+    incorrectImage: "/assets/4.2.png",
+    feedbackCorrect:
+      "✅ Correcto! Un asiento ajustable, con espaldar y espacio para los pies, asegura una postura cómoda y ergonómica.",
+    feedbackIncorrect:
+      "❌ Incorrecto.  Un buen asiento debe ser ajustable, con espaldar y estabilidad para evitar posturas incómodas.",
+  },
+  {
+    question:
+      "¿qué elemento de protección personal son más recomendables para laborar en el proceso de confección? ",
+    options: [
+      "dedal y protectores auditivos.",
+      "gafas de laboratorio y bata.",
+      "guantes impermeables y bota punta de acero.",
+      "chaleco reflectivo y dedal.",
+    ],
+    correctAnswer: "dedal y protectores auditivos.",
+    correctImage: "/assets/4.5.png",
+    incorrectImage: "/assets/4.6.png",
+    feedbackCorrect:
+      "✅ Correcto! El dedal protege los dedos de laceraciones y los protectores auditivos reducen el impacto del ruido.",
+    feedbackIncorrect:
+      "❌ Incorrecto. En confección, se necesita dedal y protectores auditivos para seguridad. Otros equipos son para riesgos distintos.",
   },
   //... resto de preguntas con mismos campos
 ];
