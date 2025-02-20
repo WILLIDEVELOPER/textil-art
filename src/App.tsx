@@ -10,6 +10,7 @@ import Sublimacion from "./pages/sublimacion";
 import Corte from "./pages/corte";
 import Prensado from "./pages/prensado";
 import Confeccion from "./pages/confecciones";
+import Teoria from "./pages/Teoria";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Navigate to="cuestionario" />} />
         <Route path="/cuestionario" element={<Cuestionario />} />
+        <Route path="/teoria" element={<Teoria />} />
         <Route path="/sublimacion" element={<Sublimacion />} />
         <Route path="/corte" element={<Corte />} />
         <Route path="/prensado" element={<Prensado />} />

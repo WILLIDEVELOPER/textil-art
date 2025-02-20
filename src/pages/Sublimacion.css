@@ -36,17 +36,25 @@
 .sublimacion-content {
   font-size: 1rem;
   margin-bottom: 1rem;
-  text-align: justify;
+  text-align: left; /* Texto alineado a la izquierda */
+}
+
+/* Contenedor de imágenes */
+.sublimacion-image-container {
+  display: flex;
+  justify-content: center; /* Centrado solo para imágenes */
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 1rem 0;
 }
 
 /* Imágenes */
 .sublimacion-image {
-  width: 100%;
   max-width: 400px;
+  width: 100%;
   height: auto;
-  margin: 1rem 0;
   border-radius: 0.5rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* Listas */

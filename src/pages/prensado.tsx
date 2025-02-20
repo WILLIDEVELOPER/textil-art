@@ -1,62 +1,134 @@
-import './Prensado.css'; // Importa el CSS
+import "./Prensado.css"; // Importa el CSS
 
 const Prensado = () => {
   return (
     <div className="prensado-container">
-      <h1 className="prensado-title">Prensado: Proceso y Recomendaciones</h1>
+      <h1 className="prensado-title">Proceso de Prensado</h1>
 
-      {/* Elementos de Protección Personal */}
       <section className="prensado-section">
-        <h2 className="prensado-subtitle">Elementos de Protección Personal (EPP)</h2>
         <p className="prensado-content">
-          Antes de iniciar el proceso de prensado, es importante utilizar el equipo de protección personal adecuado para evitar accidentes. Se recomienda el uso de:
+          Para iniciar el proceso de prensado, es fundamental utilizar guantes
+          térmicos como EPP para protegerse del calor.
         </p>
-        <ul className="prensado-list">
-          <li><strong>Guantes térmicos:</strong> Protegen las manos del calor generado por la máquina.</li>
-          <li><strong>Gafas de seguridad:</strong> Evitan que partículas de pegamento o residuos lleguen a los ojos.</li>
-        </ul>
+        <div className="image-container">
+          <img
+            src="/assets/3.1.png"
+            alt="Guantes térmicos"
+            className="prensado-image"
+          />
+        </div>
       </section>
 
-      {/* Preparación del Proceso */}
       <section className="prensado-section">
-        <h2 className="prensado-subtitle">Preparación del Proceso</h2>
         <p className="prensado-content">
-          Para iniciar, asegúrate de que la máquina esté apagada. Luego, sigue estos pasos para preparar el prensado:
+          Preparación de la máquina: Con la máquina apagada, extrae la bandeja
+          de la prensa y coloca sobre ella las piezas acolchonadas que se desean
+          adherir a la tela.
         </p>
-        <ol className="prensado-steps">
-          <li>Saca la bandeja de la prensa con cuidado.</li>
-          <li>Coloca sobre la bandeja las piezas acolchonadas que deseas adherir a la tela.</li>
-          <li>Usa un spray con pegamento para rociar las piezas uniformemente hasta que queden bien impregnadas.</li>
-          <li>Coloca un filamento textil especial sobre la parte humedecida, el cual reaccionará con el calor para adherirse firmemente a la tela.</li>
-          <li>Coloca la tela sobre el filamento textil y verifica que esté alineada correctamente.</li>
-        </ol>
+        <div className="image-container">
+          <img
+            src="/assets/3.3.png"
+            alt="Preparación de la máquina"
+            className="prensado-image"
+          />
+        </div>
       </section>
 
-      {/* Proceso de Prensado */}
       <section className="prensado-section">
-        <h2 className="prensado-subtitle">Realización del Prensado</h2>
         <p className="prensado-content">
-          Una vez preparada la bandeja, introduce la bandeja en la máquina siguiendo estas recomendaciones:
+          Aplicación del pegamento: Utiliza un spray con pegamento especial para
+          telas, teniendo en cuenta rociar las piezas de manera uniforme hasta
+          que estén completamente impregnadas.
         </p>
-        <ul className="prensado-list">
-          <li>Empuja la bandeja con cuidado, asegurándote de no tener los dedos dentro de la bandeja.</li>
-          <li>Activa la máquina y deja que el proceso de prensado ocurra durante aproximadamente <strong>20 segundos</strong>.</li>
-        </ul>
+        <div className="image-container">
+          <img
+            src="/assets/3.4.png"
+            alt="Aplicación del pegamento"
+            className="prensado-image"
+          />
+          <img
+            src="/assets/3.7.png"
+            alt="Aplicación del pegamento"
+            className="prensado-image"
+          />
+        </div>
       </section>
 
-      {/* Finalización del Proceso */}
       <section className="prensado-section">
-        <h2 className="prensado-subtitle">Finalización del Proceso</h2>
         <p className="prensado-content">
-          Una vez completado el tiempo de prensado:
+          Colocación del filamento textil: Sobre la parte humedecida por el
+          pegamento, coloca un filamento textil especial que reaccionará con el
+          calor para unir firmemente el material con la tela que se colocará
+          posteriormente.
         </p>
-        <ol className="prensado-steps">
-          <li>Apaga la máquina y saca la bandeja con cuidado.</li>
-          <li>Retira las piezas terminadas y verifica que las uniones sean firmes.</li>
-        </ol>
+        <div className="image-container">
+          <img
+            src="/assets/3.8.png"
+            alt="Colocación del filamento textil"
+            className="prensado-image"
+          />
+        </div>
+      </section>
+
+      <section className="prensado-section">
         <p className="prensado-content">
-          De esta forma, habrás finalizado el proceso de prensado de manera eficiente y segura.
+          Prensado: Introduce la bandeja nuevamente en la prensa empujándola,
+          con mucha precaución de no poner las manos dentro de la bandeja y
+          comienza el proceso de prensado, el cual durará aproximadamente 20
+          segundos.
         </p>
+        <div className="image-container">
+          <img
+            src="/assets/3.9.png"
+            alt="Proceso de prensado"
+            className="prensado-image"
+          />
+        </div>
+      </section>
+
+      <section className="prensado-section">
+        <p className="prensado-content">
+          Manejo de la bandeja: Asegúrate de empujar la bandeja con cuidado,
+          evitando tener los dedos dentro de la bandeja para prevenir
+          accidentes.
+        </p>
+        <div className="image-container">
+          <img
+            src="/assets/3.10.png"
+            alt="Manejo de la bandeja"
+            className="prensado-image"
+          />
+          <img
+            src="/assets/3.11.png"
+            alt="Finalización del proceso"
+            className="prensado-image"
+          />
+          <img
+            src="/assets/3.12.png"
+            alt="Finalización del proceso"
+            className="prensado-image"
+          />
+        </div>
+      </section>
+
+      <section className="prensado-section">
+        <p className="prensado-content">
+          Finalización: Una vez transcurrido el tiempo, retira la bandeja con
+          cuidado y saca las piezas prensadas.
+        </p>
+
+        <div className="image-container">
+          <img
+            src="/assets/3.16.png"
+            alt="Manejo de la bandeja"
+            className="prensado-image"
+          />
+          <img
+            src="/assets/3.17.png"
+            alt="Manejo de la bandeja"
+            className="prensado-image"
+          />
+        </div>
       </section>
     </div>
   );
