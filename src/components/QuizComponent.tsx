@@ -16,6 +16,7 @@ const QuizComponent = ({ questions }: { questions: Question[] }) => {
     setIsCorrect(correct);
     setSelectedAnswer(answer);
     setShowFeedback(true);
+    console.log(selectedAnswer);
 
     addAnswer(questions[currentQuestion].question, answer); // Guardar la respuesta en el store
 

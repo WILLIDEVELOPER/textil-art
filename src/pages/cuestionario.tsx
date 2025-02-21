@@ -26,7 +26,7 @@ const Cuestionario = () => {
   const [inputEmail, setInputEmail] = useState("");
   const [existingSubmission, setExistingSubmission] =
     useState<Submission | null>(null);
-  const { email, setEmail, submitQuiz, reset } = useQuizStore();
+  const { email, setEmail, reset } = useQuizStore();
 
   // Configuración de EmailJS
   const SERVICE_ID = "service_xnv2ec7";
