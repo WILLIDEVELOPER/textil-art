@@ -34,17 +34,6 @@ const Navbar = () => {
         </li>
         <li>
           <Link
-            to="/teoria"
-            className={`hover:underline ${
-              activeLink === "/teoria" ? "active" : ""
-            }`}
-            onClick={() => handleLinkClick("/teoria")}
-          >
-            Teoria
-          </Link>
-        </li>
-        <li>
-          <Link
             to="/sublimacion"
             className={`hover:underline ${
               activeLink === "/sublimacion" ? "active" : ""

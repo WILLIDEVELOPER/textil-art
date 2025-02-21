@@ -148,6 +148,23 @@ export const cuttingQuestions: Question[] = [
     feedbackIncorrect:
       "❌ Incorrecto. La opción seleccionada no corresponde a la norma que regula el manejo manual de cargas. Recuerda que la norma correcta proporciona directrices sobre seguridad y ergonomía para prevenir lesiones en el trabajo. ¡Inténtalo de nuevo!",
   },
+  {
+    question:
+      "¿Cuál es la norma NTC que especifica los limites recomendados para el levantamiento y transporte manual teniendo en cuenta, respectivamente, la intensidad, la frecuencia y la duración de la tarea?",
+    options: [
+      "NTC 5693-1",
+      "NTC 5655",
+      "NTC 5693-2",
+      "NTC 5723",
+    ],
+    correctAnswer: "NTC 5693-1",
+    correctImage: "/assets/Imagen-Extra-A.jpg",
+    incorrectImage: "/assets/Imagen-Extra-B.jpg",
+    feedbackCorrect:
+      "✅ Correcto! ¡Bien hecho! La NTC 5693-1 es la norma que aborda la ergonomía y la manipulación manual en el levantamiento y desplazamiento de cargas, considerando la intensidad, la frecuencia y la duración de la tarea. Esta norma es clave para establecer límites seguros y reducir el riesgo de lesiones en el trabajo.",
+    feedbackIncorrect:
+      "❌ Incorrecto. Incorrecto. La norma seleccionada no aborda específicamente los límites recomendados para el levantamiento y transporte manual de cargas. Asegúrate de revisar la normativa adecuada, ya que una correcta aplicación de estos principios es clave para prevenir lesiones y garantizar la seguridad en el trabajo. ¡Inténtalo de nuevo!",
+  },
   //... resto de preguntas con mismos campos
 ];
 
@@ -275,20 +292,37 @@ export const sewingQuestions: Question[] = [
   },
   {
     question:
-      "¿qué elemento de protección personal son más recomendables para laborar en el proceso de confección? ",
+      "¿qué elemento de protección personal son más recomendables para laborar en el proceso de confección?  ",
     options: [
-      "dedal y protectores auditivos.",
+      "dedal y protectores auditivos de tapón.",
       "gafas de laboratorio y bata.",
       "guantes impermeables y bota punta de acero.",
       "chaleco reflectivo y dedal.",
     ],
-    correctAnswer: "dedal y protectores auditivos.",
+    correctAnswer: "dedal y protectores auditivos de tapón.",
     correctImage: "/assets/4.5.png",
     incorrectImage: "/assets/4.6.png",
     feedbackCorrect:
       "✅ Correcto! El dedal protege los dedos de laceraciones y los protectores auditivos reducen el impacto del ruido.",
     feedbackIncorrect:
       "❌ Incorrecto. En confección, se necesita dedal y protectores auditivos para seguridad. Otros equipos son para riesgos distintos.",
+  },
+  {
+    question:
+      "¿Cuál es la disposición de tiempo correcta entre trabajo continuo de confección textil y pausa activa?",
+    options: [
+      "cuarenta minutos de trabajo continuo y veinte minutos de pausa activa. Incorrecto, una pausa tan larga no es acorde con el tiempo trabajado.",
+      "una hora de trabajo continuo y cinco minutos de pausa activa. Correcto, esta disposición de tiempo es la ideal",
+      "dos horas de trabajo continuo y cinco minutos de pausa activa. Incorrecto. Es mucho tiempo continuo de trabajo para tan poco tiempo de pausa activa.",
+      "una hora de trabajo continuo y treinta minutos de pausa activa. Incorrecto, una pausa tan larga no es acorde con el tiempo trabajado.",
+    ],
+    correctAnswer: "una hora de trabajo continuo y cinco minutos de pausa activa. Correcto, esta disposición de tiempo es la ideal",
+    correctImage: "/assets/CORRECCION.png",
+    incorrectImage: "/assets/4.12.png",
+    feedbackCorrect:
+      "✅ Correcto! La disposición de tiempo ideal en la confección textil es una hora de trabajo continuo seguida de 5 minutos de pausa activa. Esto ayuda a prevenir problemas circulatorios y mejora la ergonomía del operario",
+    feedbackIncorrect:
+      "❌ Incorrecto. Incorrecto. La distribución del tiempo entre trabajo continuo y pausa activa es fundamental para prevenir problemas circulatorios y mejorar la ergonomía del operario. Es importante realizar pausas activas de 5 minutos por cada hora de trabajo para reducir la fatiga y mejorar el bienestar en el entorno laboral. ¡Inténtalo de nuevo!",
   },
   //... resto de preguntas con mismos campos
 ];

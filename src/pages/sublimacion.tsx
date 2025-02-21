@@ -1,97 +1,136 @@
-import './Sublimacion.css'; // Importa el CSS
+import "./Sublimacion.css"; // Importa el CSS
 
 const Sublimacion = () => {
   return (
     <div className="sublimacion-container">
-      <h1 className="sublimacion-title">Sublimación: Guía Completa y Detallada</h1>
+      <h1 className="sublimacion-title">Proceso de Sublimación</h1>
 
-      {/* Introducción */}
       <section className="sublimacion-section">
-        <h2 className="sublimacion-subtitle">¿Qué es la Sublimación?</h2>
         <p className="sublimacion-content">
-          La sublimación es una técnica de impresión que utiliza calor y presión para transferir un diseño a superficies específicas, como telas, cerámicas o metales recubiertos. Es un método altamente duradero que permite obtener colores vivos y resultados de alta calidad. 
+          Antes de iniciar el proceso de sublimación, que consiste en transferir
+          un diseño a la tela mediante una prensa, es necesario utilizar los
+          equipos de protección personal (EPP) correspondientes, como guantes
+          térmicos, para evitar quemaduras.
         </p>
-        <p className="sublimacion-content">
-          Este proceso es ampliamente utilizado en la personalización de productos como camisetas, tazas, gorras y más, lo que lo convierte en una opción ideal para empresas y emprendedores.
-        </p>
+        <div className="sublimacion-image-container">
+          <img
+            src="/assets/1.2.png"
+            alt="Guantes térmicos"
+            className="sublimacion-image"
+          />
+        </div>
       </section>
 
-      {/* Elementos de Protección Personal */}
       <section className="sublimacion-section">
-        <h2 className="sublimacion-subtitle">Elementos de Protección Personal (EPP)</h2>
-        {/* <img
-          src="https://i.ibb.co/svb9MzP/sublimacion-jpg-600.jpg"
-          alt="Guantes térmicos"
-          className="sublimacion-image"
-        /> */}
         <p className="sublimacion-content">
-          Durante el proceso de sublimación, el equipo de protección personal es esencial para evitar accidentes. Los guantes térmicos protegen las manos del calor extremo generado por la prensa. Además, es recomendable usar gafas de seguridad y trabajar en un área bien ventilada para minimizar la exposición a los vapores.
+          Preparación inicial: Con la prensa apagada, ajusta el nivel de presión
+          necesario utilizando la manija de presión.
         </p>
+        <div className="sublimacion-image-container">
+          <img
+            src="/assets/1.5.png"
+            alt="Ajustando presión"
+            className="sublimacion-image"
+          />
+        </div>
       </section>
 
-      {/* Configuración de la Prensa */}
       <section className="sublimacion-section">
-        <h2 className="sublimacion-subtitle">Configuración Inicial de la Prensa Térmica</h2>
         <p className="sublimacion-content">
-          Antes de comenzar el proceso de sublimación, es crucial configurar la prensa correctamente para evitar errores en la transferencia. 
+          Configuración de la prensa: Enciende la prensa. Coloca el producto
+          textil con la parte a sublimar mirando hacia arriba, asegurándote de
+          que la tela esté bien estirada y sin arrugas, ya que cualquier pliegue
+          podría afectar el proceso.
         </p>
-        <ul className="sublimacion-list">
-          <li>Ajusta la presión utilizando la manija de la prensa. La presión debe ser moderada, asegurando contacto uniforme con la tela.</li>
-          <li>Configura la temperatura a <strong>200°C</strong> y el tiempo a <strong>60 segundos</strong>, valores estándar para la sublimación en poliéster.</li>
-          <li>Asegúrate de que la tela esté bien extendida y libre de arrugas. Las arrugas pueden causar imperfecciones en el diseño transferido.</li>
-        </ul>
+        <div className="sublimacion-image-container">
+          <img
+            src="/assets/1.6.png"
+            alt="Prensa lista"
+            className="sublimacion-image"
+          />
+        </div>
       </section>
 
-      {/* Materiales Necesarios */}
       <section className="sublimacion-section">
-        <h2 className="sublimacion-subtitle">Materiales Necesarios para Sublimación</h2>
         <p className="sublimacion-content">
-          Para obtener resultados de alta calidad, necesitarás los siguientes materiales y herramientas:
+          Ajuste de parámetros: En la pantalla de la prensa, ajusta la
+          temperatura a 200°C y el tiempo a 60 segundos.
         </p>
-        <ul className="sublimacion-list">
-          <li><strong>Papel de Sublimación:</strong> Especialmente diseñado para retener tinta y transferirla con precisión.</li>
-          <li><strong>Tinta de Sublimación:</strong> Formulada para convertir el diseño impreso en gas bajo calor.</li>
-          <li><strong>Prensa Térmica:</strong> Herramienta clave para aplicar calor y presión en el proceso.</li>
-          <li><strong>Cinta Térmica:</strong> Utilizada para fijar el papel al material y evitar movimientos.</li>
-        </ul>
+        <div className="sublimacion-image-container">
+          <img
+            src="/assets/1.7.png"
+            alt="Configurando temperatura"
+            className="sublimacion-image"
+          />
+        </div>
       </section>
 
-      {/* Pasos para la Sublimación */}
       <section className="sublimacion-section">
-        <h2 className="sublimacion-subtitle">Pasos Detallados para la Sublimación</h2>
-        <ol className="sublimacion-steps">
-          <li>Imprime el diseño deseado en el papel de sublimación utilizando tinta especial.</li>
-          <li>Coloca la tela sobre la base de la prensa, asegurándote de que esté completamente extendida.</li>
-          <li>Fija el papel sublimado con la cinta térmica, asegurando que no se desplace durante el prensado.</li>
-          <li>Baja la prensa y asegúrate de que la temperatura y el tiempo estén configurados correctamente.</li>
-          <li>Espera a que el temporizador finalice y retira cuidadosamente el papel para revelar el diseño.</li>
-        </ol>
+        <p className="sublimacion-content">
+          Colocación del papel sublimado: Coloca el papel sublimado sobre la
+          tela y fija su posición con cinta térmica. La cinta térmica es
+          esencial, ya que está diseñada para soportar altas temperaturas; el
+          uso de otro tipo de cinta puede dañar tanto el material como la
+          maquinaria.
+        </p>
+        <div className="sublimacion-image-container">
+          <img
+            src="/assets/1.8.png"
+            alt="Colocando papel"
+            className="sublimacion-image"
+          />
+          <img
+            src="/assets/1.9.png"
+            alt="Colocando papel2"
+            className="sublimacion-image"
+          />
+        </div>
       </section>
 
-      {/* Tipos de Materiales Sublimables */}
       <section className="sublimacion-section">
-        <h2 className="sublimacion-subtitle">Materiales Ideales para Sublimación</h2>
         <p className="sublimacion-content">
-          La sublimación funciona mejor en superficies de poliéster o con un recubrimiento especial. Algunos ejemplos incluyen:
+          Prensado: Baja la prensa, iniciando el conteo del tiempo.
         </p>
-        <ul className="sublimacion-list">
-          <li><strong>Textiles:</strong> Camisetas, bolsas y bandanas de poliéster.</li>
-          <li><strong>Artículos rígidos:</strong> Tazas, placas metálicas y rompecabezas con recubrimiento sublimable.</li>
-          <li><strong>Accesorios:</strong> Gorras y estuches para dispositivos.</li>
-        </ul>
+        <div className="sublimacion-image-container">
+          <img
+            src="/assets/1.10.png"
+            alt="Bajando prensa"
+            className="sublimacion-image"
+          />
+        </div>
       </section>
 
-      {/* Consejos y Trucos */}
       <section className="sublimacion-section">
-        <h2 className="sublimacion-subtitle">Consejos para Sublimadores Principiantes</h2>
         <p className="sublimacion-content">
-          Si estás comenzando en el mundo de la sublimación, ten en cuenta estos consejos:
+          Cuando el tiempo haya transcurrido, se activará una alarma que indica
+          que el proceso ha finalizado.
         </p>
-        <ul className="sublimacion-list">
-          <li>Realiza pruebas en materiales de bajo costo antes de trabajar en proyectos importantes.</li>
-          <li>Siempre limpia la superficie del material antes de colocar el papel sublimado.</li>
-          <li>Evita el uso de telas oscuras, ya que la sublimación no es opaca y los colores pueden no ser visibles.</li>
-        </ul>
+        <div className="sublimacion-image-container">
+          <img
+            src="/assets/1.11.png"
+            alt="Proceso de prensado"
+            className="sublimacion-image"
+          />
+        </div>
+      </section>
+
+      <section className="sublimacion-section">
+        <p className="sublimacion-content">
+          Levanta la prensa con cuidado, retira el papel y la prenda, siempre
+          teniendo precaución, ya que la prensa estará caliente.
+        </p>
+        <div className="sublimacion-image-container">
+          <img
+            src="/assets/1.12.png"
+            alt="Prensa abierta"
+            className="sublimacion-image"
+          />
+          <img
+            src="/assets/1.14.png"
+            alt="Prensa abierta2"
+            className="sublimacion-image"
+          />
+        </div>
       </section>
     </div>
   );
