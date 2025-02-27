@@ -13,12 +13,11 @@ interface QuizState {
   answers: Record<string, string>;
   score: number;
   submitted: boolean;
-  submissions: Record<string, Submission>; // Nuevo campo
+  submissions: Record<string, Submission>;
   setEmail: (email: string) => void;
   addAnswer: (question: string, answer: string) => void;
   setScore: (score: number) => void;
   submitQuiz: () => void;
-  reset: () => void;
 }
 
 export const useQuizStore = create<QuizState>()(
@@ -28,7 +27,7 @@ export const useQuizStore = create<QuizState>()(
       answers: {},
       score: 0,
       submitted: false,
-      submissions: {}, // Inicializar submissions
+      submissions: {},
       setEmail: (email) => set({ email: email.toLowerCase().trim() }),
       addAnswer: (question, answer) =>
         set((state) => ({
@@ -51,14 +50,6 @@ export const useQuizStore = create<QuizState>()(
               [state.email]: newSubmission,
             },
           };
-        }),
-      reset: () =>
-        set({
-          email: "",
-          answers: {},
-          score: 0,
-          submitted: false,
-          // No resetear submissions aquí
         }),
     }),
     {

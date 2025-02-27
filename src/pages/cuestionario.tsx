@@ -26,7 +26,7 @@ const Cuestionario = () => {
   const [inputEmail, setInputEmail] = useState("");
   const [existingSubmission, setExistingSubmission] =
     useState<Submission | null>(null);
-  const { email, setEmail, reset } = useQuizStore();
+  const { email, setEmail } = useQuizStore();
 
   // Configuración de EmailJS
   const SERVICE_ID = "service_xnv2ec7";
@@ -65,15 +65,14 @@ const Cuestionario = () => {
       const { score, answers } = useQuizStore.getState();
 
       const templateParams = {
-        to_email: email,
         from_name: "Sistema de Cuestionarios",
         subject: `Resultados del Cuestionario`,
         score,
         total: allQuestions.length,
         date: new Date().toLocaleString(),
+        user_email: email,
+        answers: JSON.stringify(answers, null, 2),
       };
-
-      console.log("Datos enviados:", templateParams);
 
       await emailjs.send(
         SERVICE_ID,
@@ -82,35 +81,39 @@ const Cuestionario = () => {
         "6hAb2DwKeryHH41uE"
       );
 
-      // Guardar el resultado en localStorage
+      // Obtener datos de localStorage
       const storedData = localStorage.getItem("quiz-storage");
       const submissions = storedData
         ? JSON.parse(storedData).state.submissions
         : {};
 
-      const newSubmission = {
+      // Guardar nueva respuesta
+      submissions[email] = {
         email,
         score,
         date: new Date().toISOString(),
         answers,
       };
 
-      submissions[email] = newSubmission;
-
+      // Actualizar localStorage
       localStorage.setItem(
         "quiz-storage",
         JSON.stringify({ state: { submissions } })
       );
 
-      // 🔹 Actualizar el estado de existingSubmission ANTES de resetear
-      setExistingSubmission(newSubmission);
+      // Actualizar Zustand para reflejar los nuevos datos
+      useQuizStore.setState((state) => ({
+        submissions: {
+          ...state.submissions,
+          [email]: submissions[email],
+        },
+      }));
 
       alert("Cuestionario enviado exitosamente");
 
-      // 🔹 Usar un setTimeout para resetear después de actualizar el estado
-      setTimeout(() => {
-        reset();
-      }, 100); // Esperar un breve tiempo antes de resetear
+      // Resetear el estado
+      useQuizStore.setState({ email: "", answers: {}, score: 0 });
+      setInputEmail("");
     } catch (error) {
       console.error("Error al enviar:", error);
       alert("Error al enviar el cuestionario");
