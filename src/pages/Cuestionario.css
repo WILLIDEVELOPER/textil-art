@@ -1,87 +1,96 @@
-.email-container {
-  max-width: 500px;
-  margin: 2rem auto;
+.blog-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.blog-post {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.blog-title {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 1rem;
+}
+
+.email-form {
+  max-width: 600px;
+  margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.email-container input {
+.email-form h2 {
+  color: #444;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.email-input {
   width: 100%;
-  padding: 12px;
-  margin: 1rem 0;
-  border: 2px solid #ddd;
-  border-radius: 5px;
-  font-size: 1rem;
-}
-
-.email-container button {
-  background: #4a90e2;
-  color: white;
-  padding: 12px 25px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.existing-submission {
-  margin-top: 1rem;
   padding: 1rem;
-  background: #fff3cd;
-  border-radius: 5px;
-  color: #856404;
+  margin-bottom: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  transition: border-color 0.3s ease;
 }
 
-.cuestionario-button {
-  background: #2ecc71;
+.email-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.start-button, .submit-button {
+  background-color: #007bff;
   color: white;
-  padding: 15px 30px;
   border: none;
-  border-radius: 25px;
+  padding: 1rem 2rem;
+  border-radius: 8px;
   font-size: 1.1rem;
   cursor: pointer;
-  margin-top: 2rem;
-  transition: transform 0.3s;
+  transition: background-color 0.3s ease;
 }
 
-.cuestionario-button:hover {
-  transform: translateY(-2px);
+.start-button:hover, .submit-button:hover {
+  background-color: #0056b3;
 }
 
-.cuestionario-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 20px;
-  color: #ffffff;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-  background: linear-gradient(45deg, #ff7e5f, #feb47b);
-  padding: 15px;
-  border-radius: 10px;
-}
-
-.cuestionario-button {
-  display: block;
-  width: 100%;
-  max-width: 300px;
-  margin: 20px auto;
-  padding: 12px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: white;
-  background: linear-gradient(90deg, #007bff, #00c6ff);
-  border: none;
+.submission-info {
+  background-color: #f8f9fa;
+  padding: 1rem;
   border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 1rem;
 }
 
-.cuestionario-button:hover {
-  background: linear-gradient(90deg, #0056b3, #0099cc);
-  transform: scale(1.05);
-  box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.3);
+.submission-info p {
+  color: #666;
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .blog-container {
+    padding: 1rem;
+  }
+
+  .blog-title {
+    font-size: 2rem;
+  }
+
+  .email-form {
+    padding: 1rem;
+  }
+
+  .start-button, .submit-button {
+    width: 100%;
+  }
 }

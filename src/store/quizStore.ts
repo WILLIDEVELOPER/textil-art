@@ -1,23 +1,29 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
 
+interface Answer {
+  question: string;
+  userAnswer: string;
+  correctAnswer: string;
+  isCorrect: boolean;
+}
+
 interface Submission {
   email: string;
-  answers: Record<string, string>;
+  answers: Answer[];
   score: number;
   date: string;
+  totalQuestions: number;
 }
 
 interface QuizState {
   email: string;
-  answers: Record<string, string>;
+  answers: Record<string, Answer>;
   score: number;
-  submitted: boolean;
   submissions: Record<string, Submission>;
   setEmail: (email: string) => void;
-  addAnswer: (question: string, answer: string) => void;
-  setScore: (score: number) => void;
-  submitQuiz: () => void;
+  addAnswer: (question: string, answerData: Answer) => void;
+  resetQuiz: () => void;
 }
 
 export const useQuizStore = create<QuizState>()(
@@ -26,36 +32,20 @@ export const useQuizStore = create<QuizState>()(
       email: "",
       answers: {},
       score: 0,
-      submitted: false,
       submissions: {},
       setEmail: (email) => set({ email: email.toLowerCase().trim() }),
-      addAnswer: (question, answer) =>
+      addAnswer: (question, answerData) =>
         set((state) => ({
-          answers: { ...state.answers, [question]: answer },
+          answers: { ...state.answers, [question]: answerData },
+          score: Object.values({ ...state.answers, [question]: answerData })
+            .filter(answer => answer.isCorrect).length
         })),
-      setScore: (score) => set({ score }),
-      submitQuiz: () =>
-        set((state) => {
-          const newSubmission = {
-            email: state.email,
-            answers: state.answers,
-            score: state.score,
-            date: new Date().toISOString(),
-          };
-
-          return {
-            submitted: true,
-            submissions: {
-              ...state.submissions,
-              [state.email]: newSubmission,
-            },
-          };
-        }),
+      resetQuiz: () => set({ email: "", answers: {}, score: 0 }),
     }),
     {
       name: "quiz-storage",
       partialize: (state) => ({
-        submissions: state.submissions, // Solo persistir las submissions
+        submissions: state.submissions,
       }),
     }
   )

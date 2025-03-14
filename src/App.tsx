@@ -10,8 +10,9 @@ import Sublimacion from "./pages/sublimacion";
 import Corte from "./pages/corte";
 import Prensado from "./pages/prensado";
 import Confeccion from "./pages/confecciones";
+import Normas from "./pages/normas";
 
-const App = () => {
+function App() {
   return (
     <Router>
       <Navbar />
@@ -22,9 +23,10 @@ const App = () => {
         <Route path="/corte" element={<Corte />} />
         <Route path="/prensado" element={<Prensado />} />
         <Route path="/confeccion" element={<Confeccion />} />
+        <Route path="/normas" element={<Normas />} />
       </Routes>
     </Router>
   );
-};
+}
 
 export default App;

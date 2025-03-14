@@ -19,7 +19,7 @@ export const sublimationQuestions: Question[] = [
       "Colocarse los guantes térmicos.",
     ],
     correctAnswer: "Colocarse los guantes térmicos.",
-    correctImage: "/assets/1.4.png",
+    correctImage: "/assets/1.3.png",
     incorrectImage: "/assets/1.17.png",
     feedbackCorrect:
       "✅ Correcto! El uso de guantes térmicos es fundamental en el proceso de sublimación, ya que permite proteger las manos del operario ante las altas temperaturas de la prensa. Aplicar las medidas de seguridad adecuadas ayuda a prevenir accidentes laborales. ¡Gran trabajo!",
@@ -151,12 +151,7 @@ export const cuttingQuestions: Question[] = [
   {
     question:
       "¿Cuál es la norma NTC que especifica los limites recomendados para el levantamiento y transporte manual teniendo en cuenta, respectivamente, la intensidad, la frecuencia y la duración de la tarea?",
-    options: [
-      "NTC 5693-1",
-      "NTC 5655",
-      "NTC 5693-2",
-      "NTC 5723",
-    ],
+    options: ["NTC 5693-1", "NTC 5655", "NTC 5693-2", "NTC 5723"],
     correctAnswer: "NTC 5693-1",
     correctImage: "/assets/Imagen-Extra-A.jpg",
     incorrectImage: "/assets/Imagen-Extra-B.jpg",
@@ -180,7 +175,7 @@ export const pressingQuestions: Question[] = [
       "Todas las anteriores.",
     ],
     correctAnswer: "Guantes térmicos.",
-    correctImage: "/assets/3.3.png",
+    correctImage: "/assets/3.1.png",
     incorrectImage: "/assets/3.5.png",
     feedbackCorrect:
       "✅ Correcto! Los guantes térmicos son esenciales en el proceso de prensado, ya que protegen las manos del operario contra posibles quemaduras debido a las altas temperaturas. Usar el EPP adecuado es clave para garantizar la seguridad en el trabajo. ¡Bien hecho!",
@@ -197,8 +192,8 @@ export const pressingQuestions: Question[] = [
       "Silicona liquida",
     ],
     correctAnswer: "Pegamento especial para telas",
-    correctImage: "/assets/3.8.png",
-    incorrectImage: "/assets/3.7.png",
+    correctImage: "/assets/3.7.png",
+    incorrectImage: "/assets/3.8.png",
     feedbackCorrect:
       "✅ Correcto! El pegamento especial para telas es el más adecuado para este proceso, ya que permite una adhesión fuerte y de buena calidad, asegurando que las piezas acolchonadas se fijen correctamente a la tela. Usar los materiales correctos garantiza un mejor resultado en el trabajo. ¡Bien hecho!",
     feedbackIncorrect:
@@ -215,7 +210,7 @@ export const pressingQuestions: Question[] = [
     ],
     correctAnswer:
       "Empujar la bandeja teniendo cuidado de no tener los dedos dentro de la bandeja.",
-    correctImage: "/assets/3.12.png",
+    correctImage: "/assets/3.11.png",
     incorrectImage: "/assets/3.14.png",
     feedbackCorrect:
       "✅ Correcto! Empujar la bandeja teniendo cuidado de no tener los dedos dentro es la mejor forma de evitar accidentes. La prensa funciona con calor y presión, por lo que es fundamental mantener las manos fuera del área de riesgo para prevenir atrapamientos o quemaduras. ¡Excelente trabajo!",
@@ -231,13 +226,13 @@ export const pressingQuestions: Question[] = [
       "de 15°C a 30°C.",
       "de 27°C a 30°C.",
     ],
-    correctAnswer: "de 14°C a 25°C.",
+    correctAnswer: "de 19°C a 26°C.",
     correctImage: "/assets/3.16.png",
     incorrectImage: "/assets/3.17.png",
     feedbackCorrect:
-      "✅ Correcto! Según el reglamento sobre disposiciones mínimas de seguridad y salud en los lugares de trabajo, la temperatura adecuada debe estar entre 14°C y 25°C. Mantener un ambiente dentro de este rango es clave para garantizar la comodidad y el bienestar de los trabajadores. ¡Bien hecho!",
+      "✅ Correcto! Según el reglamento sobre disposiciones mínimas de seguridad y salud en los lugares de trabajo la temperatura correcta para estos espacios es de 19°C a 26°C.",
     feedbackIncorrect:
-      "❌ Incorrecto. La temperatura en los lugares de trabajo debe estar entre 14°C y 25°C para garantizar condiciones óptimas de seguridad y salud. Un ambiente demasiado frío o caluroso puede afectar el bienestar y desempeño de los trabajadores. ¡Sigue aprendiendo y cuidando tu seguridad!",
+      "❌ Incorrecto. Según el reglamento sobre disposiciones mínimas de seguridad y salud en los lugares de trabajo la temperatura correcta para estos espacios es de 19°C a 26°C.",
   },
   //... resto de preguntas con mismos campos
 ];
@@ -282,7 +277,8 @@ export const sewingQuestions: Question[] = [
       "El asiento debe ser graduable en su altura y contar con espaldar, además se debe contar con espacio bajo la mesa para estirar los pies, a su vez el asiento debe contar con 5 ruedas para su estabilidad y que él operario adopte una postura adecuada.",
       " El asiento no debe contar con espaldar para que el operario adopte una posición propicia para ejercer su labor también es recomendable poseer 3 ruedas para que se tenga una estabilidad propicia.",
     ],
-    correctAnswer: "El asiento debe ser graduable en su altura y contar con espaldar, además se debe contar con espacio bajo la mesa para estirar los pies, a su vez el asiento debe contar con 5 ruedas para su estabilidad y que él operario adopte una postura adecuada.",
+    correctAnswer:
+      "El asiento debe ser graduable en su altura y contar con espaldar, además se debe contar con espacio bajo la mesa para estirar los pies, a su vez el asiento debe contar con 5 ruedas para su estabilidad y que él operario adopte una postura adecuada.",
     correctImage: "/assets/4.3.png",
     incorrectImage: "/assets/4.2.png",
     feedbackCorrect:
@@ -316,7 +312,8 @@ export const sewingQuestions: Question[] = [
       "dos horas de trabajo continuo y cinco minutos de pausa activa. Incorrecto. Es mucho tiempo continuo de trabajo para tan poco tiempo de pausa activa.",
       "una hora de trabajo continuo y treinta minutos de pausa activa. Incorrecto, una pausa tan larga no es acorde con el tiempo trabajado.",
     ],
-    correctAnswer: "una hora de trabajo continuo y cinco minutos de pausa activa. Correcto, esta disposición de tiempo es la ideal",
+    correctAnswer:
+      "una hora de trabajo continuo y cinco minutos de pausa activa. Correcto, esta disposición de tiempo es la ideal",
     correctImage: "/assets/CORRECCION.png",
     incorrectImage: "/assets/4.12.png",
     feedbackCorrect:

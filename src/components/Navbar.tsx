@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import "./navbar.css"; // Importa los estilos
+import "./navbar.css";
 
 const Navbar = () => {
   const location = useLocation();
@@ -12,7 +12,6 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      {/* Logo del blog */}
       <Link to="/" className="logo">
         <img
           src="https://i.ibb.co/p33qD94/Whats-App-Image-2025-01-22-at-9-18-54-PM.jpg"
@@ -24,9 +23,7 @@ const Navbar = () => {
         <li>
           <Link
             to="/cuestionario"
-            className={`hover:underline ${
-              activeLink === "/cuestionario" ? "active" : ""
-            }`}
+            className={`hover:underline ${activeLink === "/cuestionario" ? "active" : ""}`}
             onClick={() => handleLinkClick("/cuestionario")}
           >
             Cuestionario
@@ -35,9 +32,7 @@ const Navbar = () => {
         <li>
           <Link
             to="/sublimacion"
-            className={`hover:underline ${
-              activeLink === "/sublimacion" ? "active" : ""
-            }`}
+            className={`hover:underline ${activeLink === "/sublimacion" ? "active" : ""}`}
             onClick={() => handleLinkClick("/sublimacion")}
           >
             Sublimación
@@ -46,9 +41,7 @@ const Navbar = () => {
         <li>
           <Link
             to="/corte"
-            className={`hover:underline ${
-              activeLink === "/corte" ? "active" : ""
-            }`}
+            className={`hover:underline ${activeLink === "/corte" ? "active" : ""}`}
             onClick={() => handleLinkClick("/corte")}
           >
             Corte
@@ -57,9 +50,7 @@ const Navbar = () => {
         <li>
           <Link
             to="/prensado"
-            className={`hover:underline ${
-              activeLink === "/prensado" ? "active" : ""
-            }`}
+            className={`hover:underline ${activeLink === "/prensado" ? "active" : ""}`}
             onClick={() => handleLinkClick("/prensado")}
           >
             Prensado
@@ -68,12 +59,19 @@ const Navbar = () => {
         <li>
           <Link
             to="/confeccion"
-            className={`hover:underline ${
-              activeLink === "/confeccion" ? "active" : ""
-            }`}
+            className={`hover:underline ${activeLink === "/confeccion" ? "active" : ""}`}
             onClick={() => handleLinkClick("/confeccion")}
           >
             Confeccion
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/normas"
+            className={`hover:underline ${activeLink === "/normas" ? "active" : ""}`}
+            onClick={() => handleLinkClick("/normas")}
+          >
+            Normas
           </Link>
         </li>
       </ul>
