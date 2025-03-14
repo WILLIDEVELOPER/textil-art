@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+// Remove useEffect since it's not being used
+import { useState } from "react";
 import { useQuizStore } from "../store/quizStore";
 import { Question } from "../data/data";
 import "./quizcomponent.css";
