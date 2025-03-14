@@ -9,7 +9,12 @@ const QuizComponent = ({ questions }: { questions: Question[] }) => {
   const [showFeedback, setShowFeedback] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
   const [selectedAnswer, setSelectedAnswer] = useState("");
+  const [showPresentation, setShowPresentation] = useState(true);
   const { addAnswer, score } = useQuizStore();
+
+  const handlePresentationContinue = () => {
+    setShowPresentation(false);
+  };
 
   const handleAnswer = (answer: string) => {
     const correct = answer === questions[currentQuestion].correctAnswer;
@@ -28,6 +33,7 @@ const QuizComponent = ({ questions }: { questions: Question[] }) => {
   const nextQuestion = () => {
     setShowFeedback(false);
     setSelectedAnswer("");
+    setShowPresentation(true);
     setCurrentQuestion((prev) => prev + 1);
   };
 
@@ -73,21 +79,31 @@ const QuizComponent = ({ questions }: { questions: Question[] }) => {
       </div>
 
       <div className="question-section">
-        <h3 className="question-text">{questions[currentQuestion].question}</h3>
-        
         {!showFeedback ? (
-          <div className="options-grid">
-            {questions[currentQuestion].options.map((option) => (
-              <button
-                key={option}
-                onClick={() => handleAnswer(option)}
-                className={`option-button ${selectedAnswer === option ? 'selected' : ''}`}
-                disabled={showFeedback}
-              >
-                {option}
-              </button>
-            ))}
-          </div>
+          <>
+            {questions[currentQuestion].presentationImage && (
+              <div className="presentation-container">
+                <img
+                  src={questions[currentQuestion].presentationImage}
+                  alt="Presentación de la pregunta"
+                  className="presentation-image"
+                />
+              </div>
+            )}
+            <h3 className="question-text">{questions[currentQuestion].question}</h3>
+            <div className="options-grid">
+              {questions[currentQuestion].options.map((option) => (
+                <button
+                  key={option}
+                  onClick={() => handleAnswer(option)}
+                  className={`option-button ${selectedAnswer === option ? 'selected' : ''}`}
+                  disabled={showFeedback}
+                >
+                  {option}
+                </button>
+              ))}
+            </div>
+          </>
         ) : (
           <div className="feedback">
             <div className="feedback-content">

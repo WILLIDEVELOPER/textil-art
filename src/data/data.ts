@@ -2,16 +2,18 @@ export interface Question {
   question: string;
   options: string[];
   correctAnswer: string;
-  correctImage: string; // Imagen para respuesta correcta
-  incorrectImage: string; // Imagen para respuesta incorrecta
-  feedbackCorrect: string; // Retroalimentación positiva
-  feedbackIncorrect: string; // Retroalimentación negativa
+  correctImage: string;
+  incorrectImage: string;
+  feedbackCorrect: string;
+  feedbackIncorrect: string;
+  presentationImage?: string; // New optional field for presentation image
 }
 
+// Update sublimationQuestions first question
 export const sublimationQuestions: Question[] = [
   {
     question:
-      "El primer paso para iniciar con la sublimación es imprimir en papel el diseño a estampar Antes de iniciar con cualquier proceso industrial, es necesario hacer uso de las medidas de seguridad preventivas para la realización de cada labor, En el caso del proceso de sublimación el cual es un proceso en el que por medio de una prensa se transfiere un diseño en la tela para la posterior confección. Se debe hacer uso de elementos de protección personal.) ¿Cuál o cuáles serían los recomendados para esta operación?:",
+      "El primer paso para iniciar con la sublimación es imprimir en papel el diseño a estampar. Antes de iniciar con cualquier proceso industrial, es necesario hacer uso de las medidas de seguridad preventivas para la realización de cada labor, En el caso del proceso de sublimación el cual es un proceso en el que por medio de una prensa se transfiere un diseño en la tela para la posterior confección. Se debe hacer uso de elementos de protección personal (EPP). ¿Cuál o cuáles serían los recomendados para esta operación",
     options: [
       "Colocarse guantes impermeables.",
       "Colocarse guantes de tela.",
@@ -21,6 +23,7 @@ export const sublimationQuestions: Question[] = [
     correctAnswer: "Colocarse los guantes térmicos.",
     correctImage: "/assets/1.3.png",
     incorrectImage: "/assets/1.17.png",
+    presentationImage: "/assets/1.3.png",
     feedbackCorrect:
       "✅ Correcto! El uso de guantes térmicos es fundamental en el proceso de sublimación, ya que permite proteger las manos del operario ante las altas temperaturas de la prensa. Aplicar las medidas de seguridad adecuadas ayuda a prevenir accidentes laborales. ¡Gran trabajo!",
     feedbackIncorrect:
@@ -143,6 +146,7 @@ export const cuttingQuestions: Question[] = [
     correctAnswer: "Las Normas ISO 11228",
     correctImage: "/assets/2.14.png",
     incorrectImage: "/assets/2.4.png",
+    presentationImage: "/assets/2.14.png",
     feedbackCorrect:
       "✅ Correcto! Gran trabajo; La norma escogida se centra en proporcionar directrices sobre cómo manejar cargas manualmente de manera segura, con énfasis en la ergonomía para prevenir riesgos. La norma ISO 11228 aborda aspectos relacionados con la seguridad y ergonomía en el manejo manual de cargas, ayudando a prevenir lesiones y promover un trabajo seguro.",
     feedbackIncorrect:
@@ -177,6 +181,7 @@ export const pressingQuestions: Question[] = [
     correctAnswer: "Guantes térmicos.",
     correctImage: "/assets/3.1.png",
     incorrectImage: "/assets/3.5.png",
+    presentationImage: "/assets/3.1.png",
     feedbackCorrect:
       "✅ Correcto! Los guantes térmicos son esenciales en el proceso de prensado, ya que protegen las manos del operario contra posibles quemaduras debido a las altas temperaturas. Usar el EPP adecuado es clave para garantizar la seguridad en el trabajo. ¡Bien hecho!",
     feedbackIncorrect:
@@ -194,6 +199,7 @@ export const pressingQuestions: Question[] = [
     correctAnswer: "Pegamento especial para telas",
     correctImage: "/assets/3.7.png",
     incorrectImage: "/assets/3.8.png",
+    presentationImage: "/assets/3.7.png",
     feedbackCorrect:
       "✅ Correcto! El pegamento especial para telas es el más adecuado para este proceso, ya que permite una adhesión fuerte y de buena calidad, asegurando que las piezas acolchonadas se fijen correctamente a la tela. Usar los materiales correctos garantiza un mejor resultado en el trabajo. ¡Bien hecho!",
     feedbackIncorrect:
@@ -212,6 +218,7 @@ export const pressingQuestions: Question[] = [
       "Empujar la bandeja teniendo cuidado de no tener los dedos dentro de la bandeja.",
     correctImage: "/assets/3.11.png",
     incorrectImage: "/assets/3.14.png",
+    presentationImage: "/assets/3.11.png",
     feedbackCorrect:
       "✅ Correcto! Empujar la bandeja teniendo cuidado de no tener los dedos dentro es la mejor forma de evitar accidentes. La prensa funciona con calor y presión, por lo que es fundamental mantener las manos fuera del área de riesgo para prevenir atrapamientos o quemaduras. ¡Excelente trabajo!",
     feedbackIncorrect:
@@ -221,7 +228,7 @@ export const pressingQuestions: Question[] = [
     question:
       "De esta manera el proceso de prensado termina en un tiempo aproximado de 20 segundos. Una vez pasado este tiempo se saca la bandeja y se retiran las piezas terminadas. ¿Cuál es la temperatura del aire según el reglamento sobre disposiciones mínimas de seguridad y salud en los lugares de trabajo?",
     options: [
-      "de 14°C a 25°C.",
+      "de 19°C a 26°C.",
       "de 10°C a 16°C.",
       "de 15°C a 30°C.",
       "de 27°C a 30°C.",
