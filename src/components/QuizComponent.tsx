@@ -9,12 +9,7 @@ const QuizComponent = ({ questions }: { questions: Question[] }) => {
   const [showFeedback, setShowFeedback] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
   const [selectedAnswer, setSelectedAnswer] = useState("");
-  const [showPresentation, setShowPresentation] = useState(true);
   const { addAnswer, score } = useQuizStore();
-
-  const handlePresentationContinue = () => {
-    setShowPresentation(false);
-  };
 
   const handleAnswer = (answer: string) => {
     const correct = answer === questions[currentQuestion].correctAnswer;
@@ -33,7 +28,6 @@ const QuizComponent = ({ questions }: { questions: Question[] }) => {
   const nextQuestion = () => {
     setShowFeedback(false);
     setSelectedAnswer("");
-    setShowPresentation(true);
     setCurrentQuestion((prev) => prev + 1);
   };
 
